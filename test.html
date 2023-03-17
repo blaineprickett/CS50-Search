@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Search</title>
+  <style>
+    h1 {
+      font-family: Arial;
+      color: #d93025;
+      font-size: 1.5rem;
+      margin: 2.5rem 3.5rem;
+    }
+    h3 {
+        font-family: arial;
+        color: 000000;
+        font-size: 20px;
+    }
+    .layout {
+      max-width: 1140px;
+      min-width: 200px;
+      width: 96%;
+      margin: 4rem 2% 0 4.5rem;
+    }
+    .layout form {
+      display: flex;
+      flex-direction: column;
+    }
+    .layout .form-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    .layout label {
+      font-family: Arial;
+      font-size: 0.9rem;
+      margin-right: 1rem;
+      width: 40%;
+    }
+    .layout input[type="text"] {
+      width: 100%;
+      padding: 0.5rem;
+      box-sizing: border-box;
+      margin-left: 20px;
+    }
+    .divider {
+      border-bottom: 1px solid #ebebeb;
+    }
+    .google-search {
+        font-size: 9px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: 000000;
+        text-transform: underline;
+    }
+    .button-container {
+      position: relative;
+      padding-bottom: 3rem;
+    }
+    .buttons {
+      background-color: #4d90fe;
+      border: 1px solid #3079ed;
+      color: #ffffff;
+      border-radius: 2px;
+      font-size: 0.9rem;
+      font-weight: bold;
+      text-align: center;
+      white-space: nowrap;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      margin: 1rem;
+      box-sizing: border-box;
+    }
+    hr {
+      border: none;
+      height: 1px;
+      background-color: #ccc;
+      margin: 1.5rem 0;
+    }
+    a {
+      text-decoration: none;
+    }
+    .footer a {
+      color: #757575;
+      padding: 15px;
+      font-size: 11pt;
+    }
+    .footer {
+      background-color: #f2f2f2;
+      font-family: Calibri, arial;
+      color: #757575;
+      padding: 15px;
+      bottom: 0;
+      position: fixed;
+      width: 100%;
+      left: 0px;
+      height: 15px;
+      justify-content: space-evenly;
+    }
+    .footer:after {
+      display: block;
+      clear: both;
+      content: "";
+      height: 0;
+      overflow: hidden;
+    }
+    .footer-left {
+      float: left;
+    }
+    .footer-right {
+      float: right;
+    }
+  </style>
+  
+</head>
+<body>
+    <div id="google-search">
+        <p style="text-align: right;">
+          <a href="/index.html">Google Search</a>
+          </p></div>
+  <h1>Advanced Search</h1>
+  <div class="divider
+</div>
+<div class="layout">
+  <h3>Find pages with...</h3><br><br>
+  <div class="button-container">
+      <form action="https://www.google.com/search" method="GET">
+          <input type="hidden" name="as_sitesearch">
+          <div class="form-row">
+            <label for="as_q">all these words:</label>
+            <input type="text" name="as_q" id="as_q">
+          </div>
+          <div class="form-row">
+            <label for="as_epq">this exact word or phrase:</label>
+            <input type="text" name="as_epq" id="as_epq">
+          </div>
+          <div class="form-row">
+            <label for="as_oq">any of these words:</label>
+            <input type="text" name="as_oq" id="as_oq">
+          </div>
+          <div class="form-row">
+            <label for="as_eq">none of these words:</label>
+            <input type="text" name="as_eq" id="as_eq">
+          </div>
+          <button type="submit" class="buttons">Advanced Search</button>
+  </form>
+</div>
+</div>
+<div class="footer">
+  <span class="footer-left">
+    <a href="#">Help</a>
+    <a href="#">Privacy</a>
+    <a href="#">Terms</a>
+  </span>
+</div>
+</body>
+</html>

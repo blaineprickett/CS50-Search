@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Google Images</title>
+    <style type="text/css">
+      .container {
+          display: block;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          min-height: calc(100vh - 90px);
+          text-align: center;
+          width: 100%;
+          height: auto;
+          margin: 0 auto;
+          padding-top: 162px;
+        }
+      .logo {
+            margin-top: 58px;
+            object-fit: contain;
+            object-position: center;
+            border: 0px;
+            position: static;
+            max-height: 100%;
+            max-width: 100%;
+            margin-bottom: 20px;
+            margin-left: 74px;
+        }
+      .logo img {
+            height: 92px;
+            width: auto;
+            display: inline-block;
+            vertical-align: bottom;
+        }
+      .logo-text {
+            position: relative;
+            left: -61px;
+            bottom:1px;
+            font-size: 16px;
+            font-family: arial, sans-serif;
+            color: #4285f4;
+            white-space: nowrap;
+            display: inline-block;
+        }
+      .searchform {
+            display: block;
+            position: relative;
+        }
+      .searchform input[type="search"] {
+            position: relative;
+            left: 9px;
+            bottom: -7px;
+            width: 584px;
+            height: 44px;
+            padding: 20px;
+            font-size: 16px;
+            border: 1px solid #dfe1e5;
+            border-radius: 20px;
+            outline: none;
+        }
+      .searchform input[type="search"]:hover {
+            border-color: #dfe1e5;
+            box-shadow: 0 0 8px rgba(223, 225, 229, 0.6);
+        }
+      a {
+        text-decoration: none;
+      }
+      p {
+        font-family: arial;
+        font-size: 9pt;
+      }
+      .footer a {
+        color: #757575;
+        padding: 15px;
+        font-size: 10pt;
+      }
+      .footer {
+        background-color: #f2f2f2;
+        font-family: arial;
+        color: #757575;
+        padding: 15px;
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        left: 0px;
+        height: 15px;
+        justify-content: space-evenly;
+      }
+      .footer:after {
+        display: block;
+        clear: both;
+        content: "";
+        height: 0;
+        overflow: hidden;
+      }
+      .footer-left {
+        float: left;
+      }
+      .footer-right {
+        float: right;
+      }
+      .searchform input[type="text"] {
+        margin-top: 0px;
+        border-radius: 20px;
+        padding: 10px;
+        font-size: 16px;
+      }
+      .buttons {
+        margin-top: 20px;
+        margin-bottom: 50px;
+      }
+      button {
+        display: inline-block;
+        background-color: #f8f9fa;
+        border: 1px solid #f8f9fa;
+        padding: 0 16px;
+        margin: 11px 4px;
+        color: #757575;
+        font-size: 10pt;
+        font-weight: normal;
+        font-family: Roboto, Arial, sans-serif;
+        line-height: 27px;
+        height: 36px;
+        min-width: 54px;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+        border-radius: 4px;
+        appearance: auto;
+        white-space: pre;
+        box-sizing: border-box;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      button:hover {
+        color: black;
+        border: 1px solid #D9D9D9;
+      }
+    </style>
+</head>
+<body>
+  <div id="google-search">
+  <p style="text-align: right;">
+    <a href="/index.html">Google Search</a>
+    </p></div>
+      <div class="container">
+        <div class="logo">
+            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Images" />
+            <span class="logo-text">Images</span>
+        </div>
+        <form action="https://www.google.com/search" method="GET">
+          <input type="hidden" name="tbm" value="isch">
+          <div class="searchform">
+              <input type="search" name="q" placeholder="Search for images">
+          </div>
+          <div class="buttons">
+              <button type="submit">Image Search</button>
+          </div>
+      </form>
+        </div>
+        <div class="footer">
+          <span class="footer-left">
+            <a href="#">About</a>
+            <a href="#">Advertising</a>
+            <a href="#">Business</a>
+            <a href="#">How Search Works</a>
+          </span>
+          <span class="footer-right">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Settings</a>
+          </span>
+        </div>
+    </div>
+</body>
+</html>

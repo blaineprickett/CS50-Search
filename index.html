@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Google</title>
+    <script>
+      function searchFeelingLucky(event) {
+        event.preventDefault(); // Prevent the default form submission behavior
+        var searchQuery = document.getElementById("searchInput").value;
+        var encodedSearchQuery = encodeURIComponent(searchQuery);
+        var luckyURL = "https://www.google.com/search?q=" + encodedSearchQuery + "&btnI";
+        window.location.href = luckyURL;
+      }
+    </script>
+    <style type="text/css">
+      .container {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: calc(100vh - 90px);
+        text-align: center;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 162px;
+      }
+      .logo {
+        margin-top: 58px;
+        object-fit: contain;
+        object-position: center;
+        border: 0px;
+        position: static;
+        max-height: 100%;
+        max-width: 100%;
+        margin-bottom: 18px;
+        margin-left: 16px;
+      }
+      .logo img {
+        width: auto;
+        height: 92px;
+      }
+      input[type="search"] {
+        width: 580px;
+        height: 44px;
+        margin-bottom: 10px;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #dfe1e5;
+        border-radius: 20px;
+        outline: none;
+      }
+      input[type="search"]:hover {
+        border-color: #dfe1e5;
+        box-shadow: 0 0 8px rgba(223, 225, 229, 0.6);
+      }
+      a {
+        text-decoration: none;
+      }
+      p {
+        font-family: arial;
+        font-size: 9pt;
+      }
+      .footer a {
+        color: #757575;
+        padding: 15px;
+        font-size: 10pt;
+      }
+      .footer {
+        background: #f2f2f2;
+        font-family: arial;
+        color: #757575;
+        padding: 15px;
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        left: 0px;
+      }
+      .footer:after {
+        display: block;
+        clear: both;
+        content: "";
+        height: 0;
+        overflow: hidden;
+      }
+      .footer-left {
+        float: left;
+      }
+      .footer-right {
+        float: right;
+      }
+      .google-logo {
+        width: 300px;
+      }
+      .searchform input[type="text"] {
+        margin-top: 0px;
+        border-radius: 20px;
+        padding: 00px;
+        font-size: 16px;
+      }
+      .buttons {
+        margin-top: 15px;
+        margin-bottom: 50px;
+      }
+      button {
+        visibility: inherit;
+        background-color: #f8f9fa;
+        border: 1px solid #f8f9fa;
+        color: #3c4043;
+        padding: 0 16px;
+        margin: 11px 4px;
+        color: #757575;
+        font-size: 10pt;
+        font-weight: normal;
+        font-family: roboto, arial, sans-serif;
+        height: 36px;
+        min-width: 54px;
+        text-align: center;
+        user-select: none;
+        border-radius: 2px;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      button:hover {
+        color: black;
+        border: 1px solid #d9d9d9;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="other_search">
+      <p style="text-align: right;">
+          <a href="http://www.google.com/images?q">Image Search</a>
+          <a href="https://www.google.com/advanced_search?q=" style="margin-left: 1rem;">Advanced Search</a>
+      </p>
+  </div>
+  <div class="container">
+      <div class="logo">
+          <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google logo">
+      </div>
+      <form action="http://www.google.com/search" method="GET">
+          <div class="searchform">
+              <input type="search" name="q" id="searchInput" placeholder="Search Google" />
+          </div>
+          <div class="buttons">
+              <button type="submit" id="searchButton">Google Search</button>
+              <button type="button" id="luckyButton">I'm Feeling Lucky</button>
+          </div>
+      </form>
+  </div>
+      <script>
+        // Attach the click event listener to the "I'm Feeling Lucky" button
+        document.getElementById("luckyButton").addEventListener("click", searchFeelingLucky);
+      </script>
+      <div class="footer">
+        <span class="footer-left">
+          <a href="#">About</a>
+          <a href="#">Advertising</a>
+          <a href="#">Business</a>
+          <a href="#">How Search Works</a>
+        </span>
+        <span class="footer-right">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Settings</a>
+        </span>
+      </div>
+    </div>
+  </body>
+</html>
