@@ -2,9 +2,9 @@ HarvardX  CS50's Web Programming with Python and JavaScript - Project 0
 ---
 Design a front-end for Google Search, Google Image Search, and Google Advanced Search. (html & css)
 ---
-
-<img src="https://i.ibb.co/XWGWkvy/Screenshot-2023-04-03-170041.png" alt="Screenshot-2023-04-03-170041" border="0" class="center">
-
+![search](https://github.com/blaineprickett/CS50-Search/assets/109476886/acfc7148-9de5-4b00-9848-9caf214c2670)
+![imagesearch](https://github.com/blaineprickett/CS50-Search/assets/109476886/95c3df11-b726-44c6-bda7-401f54831f15)
+![advanced](https://github.com/blaineprickett/CS50-Search/assets/109476886/b6f69b83-dea0-468f-9925-d7b7bc3500b6)
 ---
 Your website must meet the following requirements:
 
